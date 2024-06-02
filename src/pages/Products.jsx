@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 
-export default function Home() {
+export default function Products() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export default function Home() {
     <>
       {data.map((post) => (
        <div style={{display: "grid",}}>
-         <div key={post.id}
+         <div key={post.ids}
           style={{margin: "10px", border: "1px solid green", padding: "10px 20px", gridTemplateColumns: "repeat(3, 1fr)"}}>
           <p>Title: {post.title}</p>
           <p>Catergory: {post.category}</p>
